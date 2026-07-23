@@ -1,0 +1,34 @@
+# PARENT CLASS
+class TrafficDevice:
+    def __init__(self,name):
+        self.name = name
+
+    def activate(self):
+        print(f"{self.name} activated")
+
+#2nd CLASS
+class Trafficlight(TrafficDevice):
+    def activate(self):
+        print(f"{self.name} activated")
+
+class SpeedCamera(TrafficDevice):
+    def activate(self):
+        print(f"{self.name}activated")
+
+class PedestrainSignal(TrafficDevice):
+    def activate(self):
+        print(f"{self.name}activated")
+
+class EmergencySiren(TrafficDevice):
+    def activate(self):
+        print(f"{self.name}activated")
+
+#CREATING THE OBJECTS
+light=TrafficDevice("Street TrafficLight")
+camera=SpeedCamera("Highway camera")
+Pedestrain=PedestrainSignal("Crosswalk Signal")
+siren=EmergencySiren("Emergency Siren")
+
+#STORING THEM IN A LIST
+devices=[light,camera,Pedestrain,siren]
+
